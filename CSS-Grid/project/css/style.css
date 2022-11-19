@@ -1,0 +1,113 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display: block;
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.popular-offers{
+    padding: 50px 0;
+}
+
+.popular-offers h2{ 
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #1F1E1E;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.popular-offers-image{
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(4, 256px);
+    grid-template-rows: repeat(4, 256px);
+    grid-template-areas: 
+        "offer-1 offer-2 offer-3 offer-3"
+        "offer-4 offer-5 offer-3 offer-3"
+        "offer-6 offer-6 offer-7 offer-8"
+        "offer-6 offer-6 offer-9 offer-10";
+}
+
+.offer-1 {
+    grid-area: offer-1;
+}
+.offer-2 {
+    grid-area: offer-2;
+}
+.offer-3 {
+    grid-area: offer-3;
+}
+.offer-4 {
+    grid-area: offer-4;
+}
+.offer-5 {
+    grid-area: offer-5;
+}
+.offer-6 {
+    grid-area: offer-6;
+}
+.offer-7 {
+    grid-area: offer-7;
+}
+.offer-8 {
+    grid-area: offer-8;
+}
+.offer-9 {
+    grid-area: offer-9;
+}
+.offer-10 {
+    grid-area: offer-10;
+}
+
+
+.offer{
+    position: relative;
+}
+.text{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+.text > .title,
+.text .upper-text{
+    position: absolute;
+    left: 18px;
+    top: 16px;
+}
+.text .upper-text{
+    position: absolute;
+    left: 33px;
+    top: 19px;
+}
+.text .upper-text span{
+    display: block;
+    margin-bottom: 15px;
+}
+.text .title{
+    text-transform: uppercase;
+}
+.offer-3 .title,
+.offer-6 .title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+}
+.text .price{
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+}
+.offer-3 .price,
+.offer-6 .price{
+    left: 25px;
+    bottom: 19px;
+}
+
+
+
